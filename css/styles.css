@@ -1,11 +1,13 @@
 
 body {
-  font-family: 'Nanum Myeongjo', serif;
   margin: 0;
   padding: 0;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
-
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
 
 header nav ul {
   list-style-type: none;
@@ -20,6 +22,50 @@ header nav ul {
 header nav li {
   flex: 1; /* Равномерно распределяем доступное пространство */
 }
+#team {
+  text-align: center;
+}
+
+#downloadButton {
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  background-color: #4CAF50;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#downloadButton:hover {
+  background-color: #45a049;
+}
+.member {
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out; /* Минимальная ширина элемента */
+  flex-basis: calc(20% - 20px); 
+
+}
+
+.member:hover {
+  transform: scale(1.05);
+}
+
+.member-img {
+  padding-top: 5px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.member h3,
+.member p {
+  margin: 10px 0;
+}
+
+
 
 header nav a {
   display: block;
@@ -30,6 +76,7 @@ header nav a {
   width: 100%; /* Занимаем 100% ширины своего родителя (li) */
   box-sizing: border-box; /* Учитываем padding в общей ширине */
 }
+
 
 /* Добавляем медиа-запрос для изменения стилей при узком экране */
 @media (max-width: 600px) {
@@ -84,20 +131,23 @@ ul {
   padding-left: 12px; 
   padding-right: 12px;
   margin-right: 20px;
-  max-width: 200px;
+  width: 200px;
 }
 .member-img{
-  max-width: 100%;
-  max-height: 362px;
-  max-width: 362xp;
+  max-height: 200px;
+  max-width: 200xp;
 }
-
+.prof{
+  background-size: cover;
+  background-position: center;
+  max-width: 150px;
+  max-height: 150px;
+}
 
 #home {
   background-image: url('../images/fon3.jpg');
   background-size: cover;
   background-position: center;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   max-width: 100%;
   padding: 20px;
 }
@@ -134,7 +184,11 @@ ul {
   background-color: #555;
 }
 #features .funk{
-  border-radius: 15%;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out; 
   padding-left: 50px;
   padding-right: 50px;
 
@@ -144,7 +198,7 @@ ul {
 }
 .bio.animate-bio {
   display: block !important;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-name: slideIn;
 }
 
@@ -169,4 +223,3 @@ ul {
   text-align: center;
   min-width: 150px; /* Минимальная ширина элемента */
   flex-basis: calc(20% - 20px); /* Начальная ширина элемента (33.33% с учетом отступов) */
-}
