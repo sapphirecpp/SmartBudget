@@ -1,0 +1,226 @@
+
+body {
+  margin: 0;
+  padding: 0;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0d1b0b;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header nav li {
+  flex: 1; /* Равномерно распределяем доступное пространство */
+}
+#team {
+  text-align: center;
+}
+
+#downloadButton {
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  background-color: #4CAF50;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#downloadButton:hover {
+  background-color: #45a049;
+}
+.member {
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out; /* Минимальная ширина элемента */
+  flex-basis: calc(20% - 20px); 
+
+}
+
+.member:hover {
+  transform: scale(1.05);
+}
+
+.member-img {
+  padding-top: 5px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.member h3,
+.member p {
+  margin: 10px 0;
+}
+
+
+
+header nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  width: 100%; /* Занимаем 100% ширины своего родителя (li) */
+  box-sizing: border-box; /* Учитываем padding в общей ширине */
+}
+
+
+/* Добавляем медиа-запрос для изменения стилей при узком экране */
+@media (max-width: 600px) {
+  header nav a {
+    font-size: 12px; /* Уменьшаем размер текста */
+  }
+}
+header nav a[href^="#"] {
+  scroll-behavior: smooth;
+}
+header {
+  background-color: #f2f2f2;
+  padding: 0px;
+  font-weight: bolder;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  margin: 0 10px;
+}
+
+
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-between;
+}
+
+.member {
+  
+  padding-left: 12px; 
+  padding-right: 12px;
+  margin-right: 20px;
+  width: 200px;
+}
+.member-img{
+  max-height: 200px;
+  max-width: 200xp;
+}
+.prof{
+  background-size: cover;
+  background-position: center;
+  max-width: 150px;
+  max-height: 150px;
+}
+
+#home {
+  background-image: url('../images/fon3.jpg');
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  padding: 20px;
+}
+
+#home .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+#home h1 {
+  font-size: 32px;
+  margin: 20px 0;
+}
+
+#home p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#home .download-btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+#home .download-btn:hover {
+  background-color: #555;
+}
+#features .funk{
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out; 
+  padding-left: 50px;
+  padding-right: 50px;
+
+}
+.member {
+  cursor: pointer;
+}
+.bio.animate-bio {
+  display: block !important;
+  animation-duration: 2s;
+  animation-name: slideIn;
+}
+
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+
+.container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.funk {
+  text-align: center;
+  min-width: 150px; /* Минимальная ширина элемента */
+  flex-basis: calc(20% - 20px); /* Начальная ширина элемента (33.33% с учетом отступов) */
+}
