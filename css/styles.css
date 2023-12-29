@@ -131,7 +131,7 @@ ul {
   padding-left: 12px; 
   padding-right: 12px;
   margin-right: 20px;
-  width: 200px;
+  max-width: 200px;
 }
 .member-img{
   max-height: 150px;
