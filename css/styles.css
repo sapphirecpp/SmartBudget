@@ -134,14 +134,14 @@ ul {
   width: 200px;
 }
 .member-img{
-  max-height: 200px;
-  max-width: 200xp;
+  max-height: 150px;
+  max-width: 150xp;
 }
 .prof{
   background-size: cover;
   background-position: center;
-  max-width: 150px;
-  max-height: 150px;
+  max-width: 180px;
+  max-height: 180px;
 }
 
 #home {
