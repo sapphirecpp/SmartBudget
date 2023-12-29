@@ -143,6 +143,7 @@ ul {
   background-position: center;
   max-width: 180px;
   max-height: 180px;
+  min-wight: 180px;
 }
 
 #home {
